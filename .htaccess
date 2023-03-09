@@ -1,0 +1,15 @@
+RewriteEngine on
+RewriteRule ^home$ /index.php [L]
+RewriteRule ^quienes-somos$ /quienes-somos.php [L]
+RewriteRule ^instalaciones$ /instalaciones.php [L]
+RewriteRule ^instalaciones/(.*)$  /instalaciones.php?provincia=$1 [L]
+RewriteRule ^instalacion/(.*)$  /instalaciones.php?id=$1
+RewriteRule ^liga/(.*)$  /liga.php?liga_fdc=$1
+RewriteRule ^contacto$ /contacto.php [L]
+RewriteRule ^error-page$ /error-page.php [L]
+
+ErrorDocument 404 /error-page
+ErrorDocument 400 /error-page
+ErrorDocument 401 /error-page
+ErrorDocument 403 /error-page
+ErrorDocument 500 /error-page

@@ -1,0 +1,19 @@
+RewriteEngine on
+RewriteRule ^home$ /admin/index.php [L]
+RewriteRule ^login$ /admin/login.php [L]
+RewriteRule ^logout$ /admin/logout.php [L]
+
+RewriteRule ^noticias/ver$ /admin/news.php [L]
+RewriteRule ^noticias/editar/(.*)$ /admin/news_edit.php?id=$1 [L]
+
+RewriteRule ^instalaciones/ver$ /admin/instalaciones.php [L]
+RewriteRule ^instalaciones/editar/(.*)$ /admin/instalaciones_edit.php?id=$1 [L]
+
+RewriteRule ^equipos/ver$ /admin/equipos.php [L]
+RewriteRule ^equipos/editar/(.*)$ /admin/equipos_edit.php?id=$1 [L]
+
+RewriteRule ^miembros/ver$ /admin/miembros.php [L]
+RewriteRule ^miembros/editar/(.*)$ /admin/miembros_edit.php?id=$1 [L]
+
+RewriteRule ^ligas/ver$ /admin/ligas.php [L]
+RewriteRule ^ligas/editar/(.*)$ /admin/ligas_edit.php?id=$1 [L]
